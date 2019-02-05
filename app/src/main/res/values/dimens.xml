@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_margin_size">5dp</dimen>
+    <dimen name="default_padding_size">5dp</dimen>
+    <dimen name="default_title_text_size">25sp</dimen>
+    <dimen name="default_description_text_size">18sp</dimen>
+    <dimen name="default_image_size">50dp</dimen>
+    <dimen name="default_image_size_details">100dp</dimen>
+</resources>

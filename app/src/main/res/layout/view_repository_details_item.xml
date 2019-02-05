@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/repositoryCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/default_margin_size"
+    android:elevation="@dimen/cardview_compat_inset_shadow">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/authorImageView"
+            android:layout_width="@dimen/default_image_size"
+            android:layout_height="@dimen/default_image_size"
+            android:layout_margin="@dimen/default_margin_size"
+            android:layout_above="@+id/descriptionTextView"
+            android:contentDescription="@string/author_content_description_image_text"/>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_margin_size"
+            android:layout_toEndOf="@+id/authorImageView"
+            android:textSize="@dimen/default_title_text_size"
+            android:textColor="@color/colorAccent"
+            tools:text="@string/repository_default_name_text"/>
+
+        <TextView
+            android:id="@+id/repositoryNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleTextView"
+            android:layout_toRightOf="@+id/authorImageView"
+            android:layout_margin="@dimen/default_margin_size"
+            android:textSize="@dimen/default_description_text_size"
+            android:textColor="@color/colorPrimaryDark"
+            tools:text="@string/default_repository_name_text"/>
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/repositoryNameTextView"
+            android:ellipsize="end"
+            android:textSize="@dimen/default_description_text_size"
+            android:textColor="@color/colorPrimary"
+            tools:text="@string/repository_default_description_text"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
